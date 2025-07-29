@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Scrapbook</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <audio id="bg-audio" loop>
+        <source src="memory-tune.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <div class="start-screen" id="startScreen">
+        <h1>Welcome to Our Memory Scrapbook</h1>
+        <button id="startBtn">Start Memory Journey</button>
+    </div>
+
+    <div class="scrapbook hidden" id="scrapbook">
+        <div class="page active">
+            <h1 class="write-animation">HIM & HIS MEMORIES</h1>
+            <p>Double-click this text to highlight special memories. Then click Next to flip pages...</p>
+        </div>
+        <div class="page">
+            <h2 class="write-animation">Our Silent Moments...</h2>
+            <p>A place where words were less, but hearts spoke. These are the whispers of memories that live forever.</p>
+        </div>
+        <div class="page">
+            <h2 class="write-animation">Unspoken Laughters</h2>
+            <p>Those random moments of burst laughter, captured not in photos, but in the heart.</p>
+        </div>
+    </div>
+
+    <div class="controls hidden" id="controls">
+        <button id="prevBtn">Previous</button>
+        <button id="nextBtn">Next</button>
+    </div>
+
+    <!-- PRACTICE PANEL -->
+    <div class="practice-panel hidden" id="practicePanel">
+        <h2>Event Practice Panel</h2>
+        <button id="playMusicBtn">Play Music</button>
+        <button id="pauseMusicBtn">Pause Music</button>
+        <button id="bgColorBtn">Change Background Color</button>
+        <button id="rotatePageBtn">Rotate Scrapbook Page</button>
+        <button id="resetBtn">Reset Scrapbook</button>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
